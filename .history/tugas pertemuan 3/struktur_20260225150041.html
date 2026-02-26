@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Denvi Sekartazi Iskandar</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .gallery article {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 220px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery article:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PORTOFOLIO</h1>
+        <h2>Denvi Sekartazi Iskandar</h2>
+        <nav>
+            <ul>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#proyek">Kegiatan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tentang">
+            <h3>Tentang Saya</h3>
+            <p>Saya adalah seorang yang aktif dalam berbagai kegiatan sosial dan organisasi, khususnya dalam program PIK-R dan pengembangan komunitas.</p>
+        </section>
+
+        <hr>
+
+        <section id="keahlian">
+            <h3>Keahlian</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li>Public Speaking / Pembawa Acara</li>
+                <li>Manajemen Acara (Event Organizing)</li>
+                <li>Sosialisasi Kesehatan Remaja</li>
+                <li>Kerja Sama Tim</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="proyek">
+            <h3>Kegiatan Utama</h3>
+            <div class="gallery">
+                <article>
+                   <img src="images/pengukuhan.jpg" alt="Pengukuhan anggota PIK-R MARGAJAYA">
+                    <h4>Pengukuhan anggota PIK-R MARGAJAYA</h4>
+                </article>
+
+                <article>
+                    <img src="images/panitia agustus.jpg" alt="KETUA PANITIA 17 AGUSTUS 2025">
+                    <h4>KETUA PANITIA 17 AGUSTUS 2025</h4>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="kontak">
+        <h3>Hubungi Saya</h3>
+        <p>Email: <a href="mailto:denvi349@gmail.com">denvi349@gmail.com</a></p>
+        <p>Telepon: <a href="tel:+6285695363380">+62 856 9536 3380</a></p>
+        <p>&copy; 2026 Denvi Sekartazi Iskandar</p>
+    </footer>
+
+</body>
+</html>
