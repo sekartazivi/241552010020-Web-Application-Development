@@ -1,0 +1,113 @@
+/* Reset & Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f8e9;
+    color: #545050;
+}
+
+/* Header (Menerapkan Display Flex) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #2e6c35;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Pseudo-class :hover */
+nav ul li a:hover {
+    color: #ffca28;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 8%;
+    background-color: #43a047;
+    color: white;
+    text-align: center;
+}
+
+.btn-contact {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px; /* Border-radius */
+    font-weight: bold;
+}
+
+/* About Us (Border & Radius) */
+.about {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 400px;
+    border: 8px solid white; /* Border */
+    border-radius: 20px; /* Rounded */
+}
+
+/* Contact Section (Form Styling) */
+.contact {
+            padding: 60px 8%;
+            background-color: #fff;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto; /* Layout sederhana: tengah */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px; /* Styling Input: Padding */
+            border: 1px solid #ccc;
+            border-radius: 8px; /* Styling Input: Border-radius */
+            margin-top: 5px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2e7d32;
+            color: white;
+        }
