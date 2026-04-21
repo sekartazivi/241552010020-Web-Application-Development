@@ -7,16 +7,16 @@
 
 body {
     background-color: #f1f8e9;
-    color: #545050;
+    color: #787474;
 }
 
-/* Header (Menerapkan Display Flex) */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background-color: #2e6c35;
+    background-color: hsl(189, 44%, 45%);
     color: white;
 }
 
@@ -43,7 +43,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     padding: 80px 8%;
-    background-color: #43a047;
+    background-color: #3e48da;
     color: white;
     text-align: center;
 }
@@ -54,11 +54,11 @@ nav ul li a:hover {
     background-color: #ff9800;
     color: white;
     text-decoration: none;
-    border-radius: 30px; /* Border-radius */
+    border-radius: 30px; 
     font-weight: bold;
 }
 
-/* About Us (Border & Radius) */
+
 .about {
     padding: 60px 8%;
     text-align: center;
@@ -67,11 +67,11 @@ nav ul li a:hover {
 .about-img {
     width: 100%;
     max-width: 400px;
-    border: 8px solid white; /* Border */
-    border-radius: 20px; /* Rounded */
+    border: 8px solid white; 
+    border-radius: 20px;
 }
 
-/* Contact Section (Form Styling) */
+
 .contact {
             padding: 60px 8%;
             background-color: #fff;
@@ -79,7 +79,7 @@ nav ul li a:hover {
 
         .contact-form {
             max-width: 500px;
-            margin: 0 auto; /* Layout sederhana: tengah */
+            margin: 0 auto; 
         }
 
         .form-group {
@@ -88,16 +88,16 @@ nav ul li a:hover {
 
         input, textarea {
             width: 100%;
-            padding: 12px; /* Styling Input: Padding */
+            padding: 12px; 
             border: 1px solid #ccc;
-            border-radius: 8px; /* Styling Input: Border-radius */
+            border-radius: 8px; 
             margin-top: 5px;
         }
 
         .btn-submit {
             width: 100%;
             padding: 12px;
-            background-color: #2e7d32;
+            background-color: #3e83dc;
             color: white;
             border: none;
             border-radius: 8px;
@@ -108,6 +108,6 @@ nav ul li a:hover {
         footer {
             text-align: center;
             padding: 20px;
-            background: #2e7d32;
+            background: #f23fda;
             color: white;
         }
