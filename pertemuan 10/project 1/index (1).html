@@ -1,0 +1,19 @@
+<button id="''theme-btn'> Mode Gelap</button>
+<div class='kartu'>
+    <div class='avatar'></div>
+    <h2>'Penghitung' 'data-target'='1200'>0</h2>
+    <p>Total Pengguna</p>
+</div>
+
+/* CSS */
+:root { --bg:#f5f5f5; --kartu:#fff; --teks:#111; }
+.gelap { --bg:#1e1e2e; --kartu:#28283c; --teks:#fff; }
+body { background:var(--bg); color:var(--teks);
+    transition: all .4s; }
+.avatar { width:80px; height:80px; border-radius:50%;
+    background:#f7df1e; margin:0 auto 16px;
+    animation: muncul .5s ease; }
+@keyframes muncul {
+    from { transform: scale(0) }
+    to { transform: scale(1) }
+}

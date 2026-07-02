@@ -1,0 +1,21 @@
+{
+  "name": "produk-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.x",
+    "bcryptjs": "^2.x",
+    "dotenv": "^16.x",
+    "express": "^4.x",
+    "jsonwebtoken": "^9.x"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^11.0.0",
+    "nodemon": "^3.x",
+    "prisma": "^5.x"
+  }
+}

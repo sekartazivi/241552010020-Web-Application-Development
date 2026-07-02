@@ -1,0 +1,205 @@
+/* 1. Tempat warna (Default Tema Terang) */
+:root {
+    --bg-utama: #f5f7fb;
+    --bg-konten: #ffffff;
+    --teks-utama: #2d3748;
+    --teks-sekunder: #718096;
+    --warna-aksen: #4c51bf;
+    --garis-border: #e2e8f0;
+}
+
+/* 2. Tempat warna (Saat menyalakkan tema gelap) */
+body.gelap {
+    --bg-utama: #1a202c;
+    --bg-konten: #2d3748;
+    --teks-utama: #f7fafc;
+    --teks-sekunder: #a0aec0;
+    --warna-aksen: #63b3ed;
+    --garis-border: #4a5568;
+}
+
+/* 3. PENGATURAN DASAR HALAMAN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-utama);
+    color: var(--teks-utama);
+    transition: background 0.3s, color 0.3s;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#theme-btn {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid var(--garis-border);
+    border-radius: 20px;
+    background-color: var(--bg-konten);
+    color: var(--teks-utama);
+    font-weight: 600;
+}
+
+/* 4. GAYA NAVIGASI TAB */
+.tab-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.tombol-tab {
+    flex: 1;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    background: #e2e8f0;
+    color: #4a5568;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+body.gelap .tombol-tab {
+    background: #4a5568;
+    color: #e2e8f0;
+}
+
+.tombol-tab.aktif {
+    background-color: var(--warna-aksen);
+    color: white;
+}
+
+/* 5. GAYA AREA KONTEN (PANEL) */
+main {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--bg-konten);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--garis-border);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* 6. GAYA FORMULIR VALIDASI */
+.field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.field input {
+    padding: 10px;
+    border: 1px solid var(--garis-border);
+    border-radius: 6px;
+    background-color: var(--bg-utama);
+    color: var(--teks-utama);
+    outline: none;
+}
+
+.field input:focus {
+    border-color: var(--warna-aksen);
+}
+
+.pesan-error {
+    color: #e53e3e;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--warna-aksen);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/* Indikator Kekuatan Password */
+.bilah {
+    width: 100%;
+    height: 6px;
+    background-color: var(--garis-border);
+    margin-top: 8px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.isian {
+    width: 0%;
+    height: 100%;
+    background-color: #e53e3e;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+#sukses {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #c6f6d5;
+    color: #22543d;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+body.gelap #sukses {
+    background-color: #22543d;
+    color: #c6f6d5;
+}
+
+/* 7. KREATIVITAS (KARTU STATISTIK) */
+.kartu-stat {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--bg-utama);
+    border-radius: 8px;
+    border: 1px solid var(--garis-border);
+}
+
+.penghitung {
+    font-size: 3rem;
+    color: var(--warna-aksen);
+    margin-bottom: 5px;
+}
+
+/* 8. KUNCI UTAMA: UNTUK MENYEMBUNYIKAN ELEMEN */
+.tersembunyi {
+    display: none !important;
+}

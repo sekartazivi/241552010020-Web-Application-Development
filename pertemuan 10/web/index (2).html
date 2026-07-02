@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mandiri - Halaman Interaktif</title>
+
+    <!-- penghubung ke file nya -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- untuk tombol dark mode  -->
+    <header>
+        <h1>Dashboard Interaktif</h1>
+        <button id="theme-btn">🌙 Mode Gelap</button>
+    </header>
+
+    <!-- komponen UI : tab navigasi -->
+    <nav class="tab-nav">
+        <button class="tombol-tab aktif" data-tab="konten-form">Form Pendaftaran</button>
+        <button class="tombol-tab" data-tab="konten-info">Informasi</button>
+    </nav>
+
+    <main>
+        <!-- tab 1: formulir validasi  -->
+        <section id="konten-form" class="panel-tab aktif">
+            <h2>Formulir Validasi</h2>
+            <form id="formulir">
+                <div class="field">
+                    <label for="nama">Nama Lengkap</label>
+                    <input id="nama" type="text" placeholder="Minimal 3 karakter">
+                    <span class="pesan-error"></span>
+                </div>
+
+                <div class="field">
+                    <label for="email">Alamat Email</label>
+                    <input id="email" type="email" placeholder="contoh@email.com">
+                    <span class="pesan-error"></span>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" placeholder="Minimal 8 karakter">
+                    <!-- indikator untuk password -->
+                    <div class="bilah"><div class="isian"></div></div>
+                    <span class="pesan-error"></span>
+                </div>
+
+                <button type="submit">Daftar Sekarang</button>
+                <div id="sukses" class="tersembunyi">✓ Pendaftaran Berhasil!</div>
+            </form>
+        </section>
+
+        <!-- tab 2: informasi tambahan (kreativitas) -->
+        <section id="konten-info" class="panel-tab tersembunyi">
+            <h2>Statistik Pengguna</h2>
+            <div class="kartu-stat" data-target="1200">
+                <h3 class="penghitung">0</h3>
+                <p>Total Pengguna Aktif</p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
