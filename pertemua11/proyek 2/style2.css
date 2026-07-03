@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#formulir {
+    background: #fafcfc;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #f9879d;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ee7eb8;
+}
+
+.pesan-error {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+/* Indikator Kekuatan Password (Bilah & Isian) */
+.bilah {
+    background: #e0e0e0;
+    height: 5px;
+    border-radius: 3px;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.isian {
+    background: #dc3545;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+button[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Mengontrol elemen sukses dan menyembunyikannya */
+#sukses {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tersembunyi {
+    display: none !important;
+}
